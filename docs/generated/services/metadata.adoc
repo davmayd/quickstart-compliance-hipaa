@@ -11,7 +11,6 @@
 :template_aws_ec2_natgateway:
 :template_aws_ec2_route:
 :template_aws_ec2_routetable:
-:template_aws_ec2_securitygroup:
 :template_aws_ec2_subnet:
 :template_aws_ec2_subnetroutetableassociation:
 :template_aws_ec2_transitgateway:
