@@ -1,10 +1,31 @@
-This guide covers the information you need to deploy the {partner-product-name} Partner Solution in the AWS Cloud.
+This guide provides instructions for deploying the U.S. Health Insurance Portability and Accountability Act (HIPAA) Reference Architecture Partner Solution on the AWS Cloud. 
 
-// Fill in the info in <angle brackets> for use on the landing page only: 
-This Amazon Web Services (AWS) Partner Solution deploys [<product name>](<partner's marketing product page>) in the AWS Cloud so that <purpose>. This solution is for <target users> who want to <do what> so that <why>. For more information, refer to the [<product name> documentation](<URL>).
+This Partner Solution is part of a set of AWS compliance offerings, which provide security-focused architectures to help managed service providers, cloud-provisioning teams, developers, integrators, and information-security teams follow strict security, compliance, and risk-management controls. For other Partner Solutions in this category, see the https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&awsf.filter-tech-category=tech-category%23security-identity-compliance&awsf.filter-industry=*all&awsf.filter-source-category=*all&awsf.filter-content-type=*all[Partner Solution catalog^].
 
-// Deploying this solution does not guarantee an organization’s compliance with any laws, certifications, policies, or other regulations. [Uncomment this statement only for solutions that relate to compliance. We'll add the corresponding reference part to the landing page and get legal approval before publishing.]
+NOTE: Deploying this Partner Solution does not guarantee an organization’s compliance with any laws, certifications, policies, or other regulations.
 
-// For advanced information about the product, troubleshooting, or additional functionality, refer to the https://{partner-solution-github-org}.github.io/{partner-solution-project-name}/operational/index.html[Operational Guide^].
+The {partner-product-name} Partner Solution helps automate building a baseline architecture that fits within your organization's larger HIPAA-compliance program. Like other AWS compliance architectures, it helps streamline, automate, and implement secure baselines in AWS—from initial design to operational security readiness. It incorporates the expertise of AWS solutions architects, security, and compliance personnel to help you build a secure and reliable architecture through automation.
 
-// For information about using this Partner Solution for migrations, refer to the https://{partner-solution-github-org}.github.io/{partner-solution-project-name}/migration/index.html[Migration Guide^].
+This Partner Solution includes AWS CloudFormation templates, which can be integrated with AWS Service Catalog, to automate building a baseline architecture that fits within your organization's larger HIPAA-compliance program. It also includes a https://fwd.aws/7M7b9?[downloadable security controls matrix^] (Microsoft Excel spreadsheet), which maps HIPAA regulatory requirements to AWS Partner Solution implementation. <<matrix-excerpt>> provides an excerpt of the information in that spreadsheet.
+
+[#matrix-excerpt]
+.Security controls matrix (excerpt)
+[link=images/security-controls-matrix-excerpt.png]
+image::../docs/deployment_guide/images/security-controls-matrix-excerpt.png[security-controls-matrix-excerpt]
+
+You must process, store, and transmit protected health information (PHI) using only HIPAA-eligible AWS services, as defined in the AWS BAA. You may use the full range of AWS services with non-PHI data, even in a HIPAA account under the AWS BAA. For the current list of HIPAA-eligible services, see https://aws.amazon.com/compliance/hipaa-eligible-services-reference/[HIPAA Eligible Services Reference^].
+
+This Partner Solution is for people in the healthcare industry who are looking for guidance on implementing HIPAA-ready environments in the AWS Cloud. 
+
+.IMPORTANT—PLEASE READ
+****
+*You must have an AWS Business Associate Addendum (BAA) in place, and follow its configuration requirements, before running protected health information (PHI) workloads on AWS.* You should not use your AWS account in connection with PHI until you have accepted the AWS BAA and configured your AWS account as required by the AWS BAA. Under HIPAA regulations, covered entities and business associates are responsible for putting in place a business associate agreement between themselves and each of their business associates. You are solely responsible for determining whether you and your organization need a business associate agreement with AWS. *If you determine that you need a business associate agreement with AWS, you can https://aws.amazon.com/artifact/getting-started/#BAA_Agreements[accept the AWS BAA through a self-service portal in AWS Artifact^]*. It is your responsibility to obtain a BAA from AWS. For more information about the AWS BAA, visit the https://aws.amazon.com/compliance/hipaa-compliance/[AWS HIPAA Compliance webpage^].
+
+*This Partner Solution does not address state-specific laws that may apply to you.* This Partner Solution only addresses requirements set forth under HIPAA, a U.S. federal law. Many individual states have adopted rules that are different and in some cases, stricter than those that are federally mandated under HIPAA.
+
+*This Partner Solution will not, by itself, make you HIPAA-compliant.* The information contained in this Partner Solution package is not exhaustive, and must be reviewed, evaluated, assessed, and approved by you in connection with your organization's particular security features, tools, and configurations. Download the https://fwd.aws/7M7b9?[security controls matrix^], a spreadsheet included with this Partner Solution, for an explanation of how this Partner Solution can be used to help support your compliance with certain requirements under the HIPAA Privacy and Security Rules. *However, it is the sole responsibility of you and your organization to determine which HIPAA regulatory requirements are applicable to you, and to ensure that you comply with those applicable requirements.* Importantly, most of the requirements under HIPAA are not technical but administrative (that is, people- and process-oriented). Although the https://fwd.aws/7M7b9?[security controls matrix^] that is included with this Partner Solution lists and discusses both the technical and administrative requirements, this Partner Solution cannot help you comply with the nontechnical HIPAA requirements.
+****
+
+*Does HIPAA apply to your organization?*
+
+Customers are solely responsible for determining whether HIPAA applies to them, and if so, for complying with their obligations under HIPAA, the AWS BAA, and all other applicable laws, rules, and regulations. AWS does not provide legal or compliance advice. Customers should consult with qualified legal counsel or consultants, as needed, to ensure that their use of AWS complies with HIPAA, the terms of the AWS BAA, and other applicable laws, rules, and regulations.
